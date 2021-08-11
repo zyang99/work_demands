@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .keybord-base {
+      min-width: 1085px;
+      padding: 20px;
+      background-color: rgb(19, 19, 19);
+      border-radius: 15px;
+      display: grid;
+      grid-template-columns: repeat(30, 30px);
+      grid-template-rows: repeat(5, 60px);
+      grid-gap: 5px;
+      box-shadow: 15px 15px 10px gray;
+    }
+
+    .key {
+      background-color: rgb(243, 243, 243);
+      border-radius: 9px;
+      grid-column: span 2;
+      font: 500 20px '';
+      text-align: center;
+      padding-top: 14px;
+      border: 2px solid black;
+    }
+
+    .key:hover {
+      box-shadow: inset 0 0 7px rgb(75, 74, 72);
+    }
+
+    .color {
+      background-color: rgb(180, 180, 180);
+    }
+
+    .lol {
+      background-color: wheat;
+    }
+
+    .delete {
+      grid-column: span 4;
+    }
+
+    .tab {
+      grid-column: span 3;
+    }
+
+    .backslash {
+      grid-column: span 3;
+    }
+
+    .capslock {
+      grid-column: span 4;
+    }
+
+    .enter {
+      grid-column: span 4;
+      background-color: rgb(247, 158, 80);
+    }
+
+    .shift {
+      grid-column: span 5;
+    }
+
+    .ctrl {
+      grid-column: span 3;
+    }
+
+    .command {
+      grid-column: span 1.5;
+    }
+
+    .alt {
+      grid-column: span 3;
+    }
+
+    .space {
+      grid-column: span 14;
+      background-color: rgb(247, 158, 80);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="keybord-base">
+    <div class="key color">~`</div>
+    <div class="key">1</div>
+    <div class="key">2</div>
+    <div class="key">3</div>
+    <div class="key">4</div>
+    <div class="key">5</div>
+    <div class="key">6</div>
+    <div class="key">7</div>
+    <div class="key">8</div>
+    <div class="key">9</div>
+    <div class="key">0</div>
+    <div class="key">-</div>
+    <div class="key">=</div>
+    <div class="key delete color">Delete</div>
+    <div class="key tab color">tab</div>
+    <div class="key lol">Q</div>
+    <div class="key lol">W</div>
+    <div class="key lol">E</div>
+    <div class="key lol">R</div>
+    <div class="key">T</div>
+    <div class="key">Y</div>
+    <div class="key">U</div>
+    <div class="key">I</div>
+    <div class="key">O</div>
+    <div class="key">P</div>
+    <div class="key">[</div>
+    <div class="key">]</div>
+    <div class="key backslash color">\</div>
+    <div class="key capslock color">Cpas Lock</div>
+    <div class="key">A</div>
+    <div class="key">S</div>
+    <div class="key">D</div>
+    <div class="key">F</div>
+    <div class="key">G</div>
+    <div class="key">H</div>
+    <div class="key">J</div>
+    <div class="key">K</div>
+    <div class="key">L</div>
+    <div class="key">;</div>
+    <div class="key">'</div>
+    <div class="key enter color">Enter</div>
+    <div class="key shift color">Shift</div>
+    <div class="key">Z</div>
+    <div class="key">X</div>
+    <div class="key">C</div>
+    <div class="key">V</div>
+    <div class="key">B</div>
+    <div class="key">N</div>
+    <div class="key">M</div>
+    <div class="key">,&lt</div>
+    <div class="key">.&gt</div>
+    <div class="key">/</div>
+    <div class="key shift color">Shift</div>
+    <div class="key ctrl color">Ctrl</div>
+    <div class="key command color">Win</div>
+    <div class="key alt color">Alt</div>
+    <div class="key space">SPACE</div>
+    <div class="key color">Alt</div>
+    <div class="key color">Win</div>
+    <div class="key color">Fn</div>
+    <div class="key color">Ctrl</div>
+  </div>
+</body>
+
+</html>
